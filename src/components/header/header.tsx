@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     <div className="header">
       <SvgIcon className="Icon" component={MenuIcon} sx={{ fontSize: 35 }} />
       <Link to="/" className="home">
-        Creepy Good's Artist Shop
+        Creepy Good Artist Shop
       </Link>
       <SvgIcon
         className="Icon"

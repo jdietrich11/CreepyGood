@@ -13,10 +13,17 @@
   .Icon {
     margin: 2rem;
   }
+  .Icon:hover {
+    cursor: pointer;
+  }
 
   .home {
     text-decoration: none;
     color: white;
     font-size: 3.2rem;
+    font-family: $monster-font;
+  }
+  .home:hover {
+    cursor: pointer;
   }
 }

@@ -1,7 +1,9 @@
 import React from "react";
 
+import FeaturedProduct from "../../components/feature/feature";
+
 const HomePage: React.FC = () => {
-  return <div>Hello World!</div>;
+  return <FeaturedProduct />;
 };
 
 export default HomePage;
