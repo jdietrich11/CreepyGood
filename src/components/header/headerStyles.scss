@@ -1,0 +1,22 @@
+@import '../../assets/styleVariables.scss';
+
+.header {
+  width: auto;
+  height: 7rem;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+
+  .Icon {
+    margin: 2rem;
+  }
+
+  .home {
+    text-decoration: none;
+    color: white;
+    font-size: 3.2rem;
+  }
+}
