@@ -16,15 +16,6 @@ const TagBanner: React.FC = () => {
             You choose any of our spooky design, add them to dozens of apperal,
             accessories, or a variety of prints
           </div>
-          <div className="iconContainer">
-            <Icon icon="facebook2" size="4rem" color="blue" className="icon" />
-            <Icon
-              icon="instagram"
-              size="4rem"
-              color="purple"
-              className="icon"
-            />
-          </div>
         </div>
       </div>
     </div>

@@ -1,10 +1,21 @@
 import React from "react";
 
+import Icon from "../../helper/icon/icon";
+
 import "./footer.styles.scss";
 
 const Footer: React.FC = () => {
   return (
     <div className="footerContainer">
+      <div className="iconContainer">
+        <div className="followText">Follow us</div>
+        <a href="http://facebook.com/CreepyGood">
+          <Icon icon="facebook2" size="3rem" color="white" className="icon" />
+        </a>
+        <a href="http://instagram.com/Creepy_Good">
+          <Icon icon="instagram" size="3rem" color="white" className="icon" />
+        </a>
+      </div>
       <div className="textContainer">
         <div>
           Powered by{" "}

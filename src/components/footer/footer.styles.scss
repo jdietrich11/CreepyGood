@@ -1,9 +1,31 @@
 .footerContainer {
-  height: 12rem;
   background-color: grey;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .iconContainer {
+    margin-top: 2rem;
+    align-self: center;
+    width: 90rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    .followText {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: white;
+    }
+
+    .icon {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 
   .textContainer {
     height: 5rem;
