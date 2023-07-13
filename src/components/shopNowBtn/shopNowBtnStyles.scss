@@ -1,7 +1,7 @@
 @import "../../assets/styleVariables.scss";
 
 .shopNowContainer {
-  background-color: rgb(127, 127, 127);
+  background-color: rgba(127, 127, 127, 0);
   width: 30rem;
   align-self: center;
   height: 12rem;
@@ -10,7 +10,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.51rem solid purple;
+  border: 0.51rem solid rgb(255, 255, 255);
+  color: white;
 
   transition: all 0.2s ease;
 
@@ -22,7 +23,7 @@
   &:hover {
     cursor: pointer;
     transform: translateY(-0.25rem);
-    box-shadow: 0.25rem 0 0 1 rgba(0, 0, 0, 0.2);
+    box-shadow: 0.25rem 0 0 1 rgba(255, 255, 255, 0.2);
   }
   &:active {
     transform: translateY(0);
