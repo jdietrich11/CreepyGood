@@ -1,0 +1,45 @@
+$border-color: rgba(0, 0, 0, 0.33);
+$border-width: 0.2rem;
+
+.dropdownContainer {
+  margin-top: 1.4rem;
+  width: 90rem;
+  border-top: $border-width solid $border-color;
+  border-bottom: $border-width solid $border-color;
+  color: white;
+
+  .dropdownNameContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    .dropdownName {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .flip {
+      rotate: 180deg;
+    }
+  }
+  .optionsContainer {
+    padding: 1rem;
+
+    .option {
+      width: 8rem;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+
+      &:hover {
+        cursor: pointer;
+        color: gold;
+      }
+    }
+  }
+
+  .none {
+    height: 0;
+  }
+}

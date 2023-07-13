@@ -1,43 +1,49 @@
 .footerContainer {
-  background-color: grey;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-image: url("../../assets/Images/sebastiaan-stam-XbZkCaminOY-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
 
-  .iconContainer {
-    margin-top: 2rem;
-    align-self: center;
-    width: 90rem;
+  .footerContainerImage {
+    background-color: rgba(255, 255, 255, 0.212);
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
-    .followText {
-      font-size: 2rem;
-      text-transform: uppercase;
-      font-weight: 800;
-      color: white;
-    }
+    .iconContainer {
+      margin-top: 2rem;
+      align-self: center;
+      width: 90rem;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
 
-    .icon {
-      &:hover {
-        cursor: pointer;
+      .followText {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: white;
+      }
+
+      .icon {
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
-  }
 
-  .textContainer {
-    height: 5rem;
-    width: 30rem;
-    color: white;
-    text-align: center;
-    font-size: 1.2rem;
-    gap: 0.5rem;
-
-    .link {
-      text-decoration: none;
+    .textContainer {
+      height: 5rem;
+      width: 30rem;
       color: white;
+      text-align: center;
+      font-size: 1.2rem;
+      gap: 0.5rem;
+
+      .link {
+        text-decoration: none;
+        color: white;
+      }
     }
   }
 }
