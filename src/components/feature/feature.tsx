@@ -12,7 +12,6 @@ const FeaturedProduct: React.FC = () => {
   return (
     <div className="featureProduct">
       <div className="featureBackgroundCover">
-        <div>New exclusive</div>
         <div className="featureImgContainer">
           <img
             src={featureSource}
