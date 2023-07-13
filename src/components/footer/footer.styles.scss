@@ -40,7 +40,7 @@
 
       .textContainer {
         height: 5rem;
-        max-width: 30rem;
+        width: 30rem;
         color: white;
         text-align: center;
         font-size: 1.2rem;
@@ -81,7 +81,7 @@
           display: flex;
 
           .input {
-            max-width: 70%;
+            width: 70%;
             height: 4rem;
             background-color: rgba(0, 0, 0, 0);
             border: 0.2rem solid white;
