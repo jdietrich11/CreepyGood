@@ -1,6 +1,9 @@
 import React from "react";
 
 import Icon from "../../helper/icon/icon";
+import Dropdown from "../dropdown/dropdown";
+
+import footerOptions from "../../assets/information/footerOptions";
 
 import "./footer.styles.scss";
 
@@ -16,6 +19,9 @@ const Footer: React.FC = () => {
           <Icon icon="instagram" size="3rem" color="white" className="icon" />
         </a>
       </div>
+      {footerOptions.map((item) => {
+        return <Dropdown name={item.name} options={item.options} />;
+      })}
       <div className="textContainer">
         <div>
           Powered by{" "}
@@ -36,6 +42,7 @@ const Footer: React.FC = () => {
             Legal
           </a>
         </div>
+        D
       </div>
     </div>
   );
