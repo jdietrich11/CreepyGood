@@ -1,4 +1,4 @@
-@import '../../assets/styleVariables.scss';
+@import "../../assets/styleVariables.scss";
 
 .shopNowContainer {
   background-color: rgb(127, 127, 127);
@@ -10,14 +10,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: .51rem solid purple;
+  border: 0.51rem solid purple;
 
-  transition: all .2s ease;
+  transition: all 0.2s ease;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   &:hover {
     cursor: pointer;
-    transform: translateY(-.25rem);
-    box-shadow: .25rem 0 0 1 rgba(0,0,0,.2);
+    transform: translateY(-0.25rem);
+    box-shadow: 0.25rem 0 0 1 rgba(0, 0, 0, 0.2);
   }
   &:active {
     transform: translateY(0);

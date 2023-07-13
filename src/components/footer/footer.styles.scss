@@ -1,10 +1,12 @@
+@import "../../assets/styleVariables.scss";
+
 .footerContainer {
   background-image: url("../../assets/Images/sebastiaan-stam-XbZkCaminOY-unsplash.jpg");
   background-position: center;
   background-size: cover;
 
   .footerContainerImage {
-    background-color: rgba(255, 255, 255, 0.212);
+    background-color: rgba(0, 0, 0, 0.377);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,6 +45,83 @@
       .link {
         text-decoration: none;
         color: white;
+      }
+    }
+
+    .subscribeContainer {
+      width: 90rem;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      gap: 1rem;
+      border-bottom: $border-width solid $border-color;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+      .subscribe {
+        font-size: 3rem;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      .subtitle {
+        font-size: 1.5rem;
+      }
+      .inputContainer {
+        width: 90rem;
+        display: flex;
+
+        .input {
+          width: 70%;
+          height: 4rem;
+          background-color: rgba(0, 0, 0, 0);
+          border: 0.2rem solid white;
+          border-radius: 4px;
+          color: white;
+          padding-left: 2rem;
+          margin-right: 2rem;
+
+          &::placeholder {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+          }
+        }
+
+        .subscribeBtn {
+          width: 10rem;
+          background-color: rgba(255, 255, 255, 0);
+          color: white;
+          border: $border-width solid white;
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-transform: uppercase;
+          font-size: 1.2rem;
+          font-weight: 700;
+
+          transition: all 1s ease;
+
+          &:hover {
+            cursor: pointer;
+            color: black;
+            background-color: white;
+            border: 0.2rem solid black;
+            transform: translateY(-0.3rem);
+            box-shadow: 0 0.5rem 1rem 0.5rem rgba(255, 255, 255, 0.199);
+          }
+
+          &:active {
+            background-color: rgba(102, 255, 0, 0.753);
+            transform: translateY(0);
+            box-shadow: 0 0 0 0;
+          }
+        }
       }
     }
   }

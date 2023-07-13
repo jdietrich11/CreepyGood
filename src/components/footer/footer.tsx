@@ -23,6 +23,17 @@ const Footer: React.FC = () => {
         {footerOptions.map((item) => {
           return <Dropdown name={item.name} options={item.options} />;
         })}
+        <div className="subscribeContainer">
+          <div className="subscribe">Subscribe Now</div>
+          <div className="subtitle">
+            subscribe and be the first to hear about new releases and special
+            offers!
+          </div>
+          <div className="inputContainer">
+            <input type="email" placeholder="email address" className="input" />
+            <div className="subscribeBtn">sign up</div>
+          </div>
+        </div>
         <div className="textContainer">
           <div>
             Powered by{" "}
@@ -33,16 +44,7 @@ const Footer: React.FC = () => {
               Threadless Artist Shops
             </a>
           </div>
-          <div>
-            &copy;CreepyGood's Artist Shop /{" "}
-            <a className="link" href="#">
-              Help & Returns
-            </a>{" "}
-            /{" "}
-            <a className="link" href="#">
-              Legal
-            </a>
-          </div>
+          <div>&copy;CreepyGood's Artist Shop</div>
         </div>
       </div>
     </div>
