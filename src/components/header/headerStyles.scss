@@ -1,29 +1,43 @@
-@import '../../assets/styleVariables.scss';
+@import "../../assets/styleVariables.scss";
 
-.header {
-  width: auto;
+.headerContainer {
+  width: 100vw;
   height: 7rem;
   background-color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
 
-  .Icon {
-    margin: 2rem;
-  }
-  .Icon:hover {
-    cursor: pointer;
-  }
-
-  .home {
-    text-decoration: none;
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     color: white;
-    font-size: 3.2rem;
-    font-family: $monster-font;
+    max-width: 95rem;
+    margin: auto;
+
+    .Icon {
+      margin: 2rem;
+    }
+    .Icon:hover {
+      cursor: pointer;
+    }
+
+    .home {
+      text-decoration: none;
+      color: white;
+      font-size: 3.2rem;
+      font-family: $monster-font;
+    }
+    .home:hover {
+      cursor: pointer;
+    }
   }
-  .home:hover {
-    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .headerContainer {
+    height: 14rem;
+    .header {
+      max-width: 80rem;
+    }
   }
 }

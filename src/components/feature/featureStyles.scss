@@ -1,8 +1,8 @@
-@import '../../assets/styleVariables.scss';
+@import "../../assets/styleVariables.scss";
 
 .featureProduct {
   height: 45rem;
-  background-image: url('../../assets/Images/BGImage.jpg');
+  background-image: url("../../assets/Images/BGImage.jpg");
   background-position: center;
   background-size: cover;
 
@@ -10,59 +10,63 @@
     height: 100%;
     width: 100%;
     background-color: rgb(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 4rem;
 
-    .featureImgContainer {
-      height: 38rem;
-      width: 35rem;
-      border-radius: 12px;
-      rotate: -5deg;
-      background-color: grey;
-      padding: .7rem;
-      margin-left: -14rem;
-      
-      .featureImg {
-        height: 100%;
-        width: 100%;
-        border-radius: 12px;
-      }
-    }
-
-    .featureTextContainer {
-      height: 38rem;
-      width: 38rem;
+    .featureContainer {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 4rem;
+      max-width: 95rem;
+      margin: auto;
 
-      .featureText {
-        color: white;
-        font-size: 3rem;
-        font-family: $monster-font;
-        text-align: center;
+      .featureImgContainer {
+        height: 38rem;
+        width: 35rem;
+        border-radius: 12px;
+        rotate: -5deg;
+        background-color: grey;
+        padding: 0.7rem;
+
+        .featureImg {
+          height: 100%;
+          width: 100%;
+          border-radius: 12px;
+        }
       }
-      
-      .colorBoxContainer {
-        height: 4rem;
-        width: 32rem;
+
+      .featureTextContainer {
+        height: 38rem;
+        width: 38rem;
         display: flex;
-        justify-content: space-evenly;
-        
-        .colorBox {
-          height: 3rem;
-          width: 3rem;
+        flex-direction: column;
+        justify-content: space-between;
 
-          transition: all .33s ease;
+        .featureText {
+          color: white;
+          font-size: 3rem;
+          font-family: $monster-font;
+          text-align: center;
+        }
 
-          &:hover {
-            cursor: pointer;
-            transform: translateY(-.21rem);
-          }
-          &:active {
-            transform: translateY(0);
+        .colorBoxContainer {
+          height: 4rem;
+          width: 32rem;
+          display: flex;
+          justify-content: space-evenly;
+
+          .colorBox {
+            height: 3rem;
+            width: 3rem;
+
+            transition: all 0.33s ease;
+
+            &:hover {
+              cursor: pointer;
+              transform: translateY(-0.21rem);
+            }
+            &:active {
+              transform: translateY(0);
+            }
           }
         }
       }
@@ -71,11 +75,23 @@
 }
 
 .black {
-  border: .2rem solid white;
+  border: 0.2rem solid white;
   background-color: black;
 }
 
 .white {
-  border: .2rem solid black;
+  border: 0.2rem solid black;
   background-color: white;
+}
+
+@media (max-width: 600px) {
+  .colorBox {
+    &:hover {
+      cursor: pointer;
+      transform: translateY(0);
+    }
+    &:active {
+      transform: translateY(0);
+    }
+  }
 }

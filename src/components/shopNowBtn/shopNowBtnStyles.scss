@@ -35,3 +35,15 @@
     font-family: $monster-font;
   }
 }
+
+@media (max-width: 600px) {
+  .shopNowContainer {
+    &:hover {
+      cursor: pointer;
+      transform: translateY(0);
+    }
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}

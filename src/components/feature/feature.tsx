@@ -12,28 +12,31 @@ const FeaturedProduct: React.FC = () => {
   return (
     <div className="featureProduct">
       <div className="featureBackgroundCover">
-        <div className="featureImgContainer">
-          <img
-            src={featureSource}
-            alt="new shirt product"
-            className="featureImg"
-          />
-        </div>
-        <div className="featureTextContainer">
-          <div className="featureText">
-            Limited time only! Creepy good exclusive design!!!
+        <div className="featureContainer">
+          <div className="featureImgContainer">
+            <img
+              src={featureSource}
+              alt="new shirt product"
+              className="featureImg"
+            />
+            d
           </div>
-          <div className="colorBoxContainer">
-            <div
-              className="colorBox white"
-              onClick={() => setFeatureColor("White")}
-            ></div>
-            <div
-              className="colorBox black"
-              onClick={() => setFeatureColor("Black")}
-            ></div>
+          <div className="featureTextContainer">
+            <div className="featureText">
+              Limited time only! Creepy good exclusive design!!!
+            </div>
+            <div className="colorBoxContainer">
+              <div
+                className="colorBox white"
+                onClick={() => setFeatureColor("White")}
+              ></div>
+              <div
+                className="colorBox black"
+                onClick={() => setFeatureColor("Black")}
+              ></div>
+            </div>
+            <ShopNowBtn />
           </div>
-          <ShopNowBtn />
         </div>
       </div>
     </div>

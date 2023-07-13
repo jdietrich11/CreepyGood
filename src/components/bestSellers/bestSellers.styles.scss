@@ -4,6 +4,8 @@
   align-items: center;
   gap: 4rem;
   padding: 3rem;
+  margin: auto;
+  max-width: 75rem;
 
   .bestSellersTitle {
     font-size: 4rem;
@@ -13,6 +15,6 @@
 
   .itemCardsContainer {
     display: flex;
-    gap: 5rem
+    gap: 5rem;
   }
 }

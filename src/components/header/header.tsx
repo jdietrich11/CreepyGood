@@ -9,16 +9,18 @@ import { SvgIcon } from "@mui/material";
 
 const Header: React.FC = () => {
   return (
-    <div className="header">
-      <SvgIcon className="Icon" component={MenuIcon} sx={{ fontSize: 35 }} />
-      <Link to="/" className="home">
-        Creepy Good Artist Shop
-      </Link>
-      <SvgIcon
-        className="Icon"
-        component={ShoppingCartOutlinedIcon}
-        sx={{ fontSize: 35 }}
-      />
+    <div className="headerContainer">
+      <div className="header">
+        <SvgIcon className="Icon" component={MenuIcon} sx={{ fontSize: 35 }} />
+        <Link to="/" className="home">
+          Creepy Good Artist Shop
+        </Link>
+        <SvgIcon
+          className="Icon"
+          component={ShoppingCartOutlinedIcon}
+          sx={{ fontSize: 35 }}
+        />
+      </div>
     </div>
   );
 };

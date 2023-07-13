@@ -39,3 +39,18 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 800px) {
+  .itemContainer {
+    .itemImg {
+      height: 10rem;
+    }
+    &:hover {
+      cursor: pointer;
+      transform: translateY(0);
+    }
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}
