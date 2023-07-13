@@ -1,7 +1,5 @@
 import React from "react";
 
-import Icon from "../../helper/icon/icon";
-
 import "./tagBanner.styles.scss";
 
 const TagBanner: React.FC = () => {
